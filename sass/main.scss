@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #333;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+
+	padding: 0 100px;
+	width: 100%;
+	height: 80px;
+	background-color: #93032e;
+	color: white;
+	text-transform: uppercase;
+
+	.nav-items {
+		justify-content: flex-end;
+		a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+		a:hover {
+			color: gold;
+		}
+	}
+}
+.header {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	background-image: url('https://cdn.pixabay.com/photo/2020/03/18/20/01/forest-4945407_960_720.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+
+	.header-title {
+		font-size: 35px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: white;
+	}
+	.header-description {
+		font-weight: 300;
+		color: white;
+		font-size: 25px;
+		padding: 20px 0;
+	}
+	
+	.header-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+
+		background-color: rgba(237, 216, 146, 0.5);
+	}
+}
+.main {
+	background-color: #fdf4e3;
+	.main-text {
+		font-size: 35px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #93032e;
+	}
+	.main-icon-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.icon-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		width: 24%;
+		min-height: 350px;
+		border: 7px solid #6c4b20;
+		padding: 20px;
+		.icon {
+			font-size: 55px;
+			color: #93032e;
+		}
+		.icon-title {
+			text-align: center;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: #6c4b20;
+		}
+		.icon-text {
+			text-align: center;
+			font-weight: 300;
+			font-size: 20px;
+		}
+	}
+}
+.underline-cream {
+	width: 30%;
+	height: 7px;
+	background-color: #fdf4e3;
+
+	margin: 20px 0;
+}
+.underline-red {
+	width: 30%;
+	height: 7px;
+	background-color: #93032e;
+
+	margin: 20px 0;
+}
+.container {
+	z-index: 10;
+	
+	padding: 5% 20%;
+}
+.btn-red {
+	background-color: #93032e;
+	color: white;
+	border: 7px solid #93032e;
+
+	border: none;
+	transition: background-color, color, border, 0.5s;
+}
+.btn-red:hover {
+	background-color: white;
+	color: #93032e;
+	border: 7px solid #93032e;
+}
+.btn-white {
+	border: 7px solid #93032e;
+	background-color: white;
+	color: #93032e;
+	transition: background-color, color, border, 0.5s;
+}
+.btn-white:hover {
+	background-color: #93032e;
+	color: white;
+}
+.btn {
+	text-transform: uppercase;
+	padding: 20px 30px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.first-house {
+	background-color: white;
+	.house-left {
+		width: 50%;
+		.first-house-title {
+			font-size: 35px;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		.house-icon-box {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			padding: 10px;
+
+			.house-icon {
+				.icon {
+					font-size: 55px;
+					color: #93032e;
+				}
+				.house-text {
+					text-align: center;
+					text-transform: uppercase;
+					font-weight: bold;
+					padding: 10px 0;
+				}
+			}
+		}
+		.house-description {
+			padding: 20px 0;
+			font-size: 20px;
+			font-weight: 300;
+		}
+		.house-description-important {
+			font-size: 20px;
+			text-align: center;
+			color: #93032e;
+			font-weight: 600;
+		}
+		.house-btn {
+			padding: 20px 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+	.house-right
+	{
+		width: 50%;
+		display: flex;
+		
+		img{
+			width: 100%;
+			border: 7px solid #93032e;
+		}
+	}
+}
+.test {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vw;
+	height: 100vh;
+}
+.xd{
+	width: 200px;
+	height: 100px;
+	background: none;
+	position: relative;
+	overflow: hidden;
+	
+}
+.xd::after{
+	position: absolute;
+	content: 'Siema';
+	color: white;
+	font-size: 25px;
+	
+	height: 100%;
+	width: 50%;
+	background-color: blue;
+	top:0px;
+	left: 200px;
+	transition: 0.3s;
+}
+.xd::before
+{
+	position: absolute;
+
+	content: '';
+	width: 100%;
+	border: 1px solid red;
+	top: -50px;
+	right: 0px;
+	transition: 0.5s;
+
+}
+.xd:hover:after{
+	left:-200px;
+}
+.xd:hover::before{
+	top:200px;
+}
